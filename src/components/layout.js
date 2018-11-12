@@ -13,6 +13,8 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            description
+            keywords
           }
         }
       }
@@ -22,11 +24,17 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description',    content: data.site.siteMetadata.description },
+            { name: 'keywords',       content: data.site.siteMetadata.keywords },
+            { name: 'og:type',        content: 'profile' },
+            { name: 'og:url',         content: 'https://rockin.work/' },
+            { name: 'og:title',       content: data.site.siteMetadata.title },
+            { name: 'og:site_name',   content: data.site.siteMetadata.title },
+            { name: 'og:description', content: data.site.siteMetadata.description },
+            { name: 'twitter:card',   content: 'summary' },
           ]}
         >
-          <html lang="en" />
+          <html lang="ja" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
