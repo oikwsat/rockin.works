@@ -37,7 +37,14 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: true,
       },
-    },    
+    },
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `oikawa/publication`,
+        limit: 200,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
