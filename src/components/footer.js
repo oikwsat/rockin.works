@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Header = ({ siteTitle }) => (
+const Footer = ({ siteTitle }) => (
   <div
     style={{
       background: '#191919',
@@ -15,19 +15,32 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
+      <div style={{
+        margin: 0,
+        color: 'white',
+      }}>
+      <Link
           to="/"
           style={{
             color: 'white',
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          TOP
         </Link>
-      </h1>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <Link
+          to="/privacy"
+          style={{
+            color: 'white',
+            textDecoration: 'none',
+          }}
+        >
+          privacy
+        </Link>
+      </div>
     </div>
   </div>
 )
 
-export default Header
+export default Footer
