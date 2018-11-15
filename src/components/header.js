@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 const Header = ({ siteTitle }) => (
@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
       }}
       >
         <div style={{ maxWidth: '320px', marginBottom: '1.45rem' }}>
-          <Img fluid={data.placeholderImage.childImageSharp.fluid} alt={siteTitle}/>
+          <Link to="/"><Img fluid={data.placeholderImage.childImageSharp.fluid} alt={siteTitle}/></Link>
         </div>
       </div>
     }
