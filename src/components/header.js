@@ -1,33 +1,34 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: '#191919',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
+  <StaticQuery
+    query={graphql`
+      query {
+        placeholderImage: file(relativePath: { eq: "header.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 320) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data =>
+      <div
       style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        background: '#000',
+        marginBottom: '1.45rem',
       }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
+      >
+        <div style={{ maxWidth: '320px', marginBottom: '1.45rem' }}>
+          <Img fluid={data.placeholderImage.childImageSharp.fluid} alt={siteTitle}/>
+        </div>
+      </div>
+    }
+  />
 )
 
 export default Header
