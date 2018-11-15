@@ -19,8 +19,8 @@ const IndexPage = () => (
     <div class="card">
       <h3 class="card-header">Tools</h3>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><Link to="/yokohama-cinemas-calendar/">横浜駅・みなとみらいエリアの映画館 割引デー カレンダー</Link></li>
-        <li class="list-group-item"><Link to="/kawasaki-cinemas-calendar/">川崎エリアの映画館 割引デー カレンダー</Link></li>
+        <li class="list-group-item"><Link to="/yokohama-cinemas-discount-calendar/">横浜駅・みなとみらいエリアの映画館 割引デー カレンダー</Link></li>
+        <li class="list-group-item"><Link to="/kawasaki-cinemas-discount-calendar/">川崎エリアの映画館 割引デー カレンダー</Link></li>
       </ul>
     </div>
 
