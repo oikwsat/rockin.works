@@ -41,8 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-source-medium`,
       options: {
-        username: `oikawa/publication`,
-        limit: 200,
+        username: `@oikawa`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
