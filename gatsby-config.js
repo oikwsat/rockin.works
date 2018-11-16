@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://rockin.work',
     title: "rockin' works",
     description: "rockin' works. oikwsatが自作したサービス・ツールやブログを公開しているポートフォリオサイトです。",
     keywords: "rockin' works,oikwsat,oikawa,yokohama,product,portfolio",
@@ -15,6 +16,7 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
