@@ -11,7 +11,7 @@ const PrivacyPage = () => (
       <p><strong>・ウェブサイト</strong></p>
       <p>当サイトは第三者配信の広告サービス「Google Adsense グーグルアドセンス」を利用しています。</p>
       <p>広告配信事業者は，ユーザーの興味に応じた広告を表示するためにCookie（クッキー）を使用することがあります。</p>
-      <p>Cookie（クッキー）を無効にする設定およびGoogleアドセンスに関する詳細は「<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">広告 – ポリシーと規約 – Google</a>」をご覧ください。</p>
+      <p>Cookie（クッキー）を無効にする設定およびGoogleアドセンスに関する詳細は「<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">広告 – ポリシーと規約 – Google</a>」をご覧ください。</p>
 
       <p><strong>・アプリケーション</strong></p>
       <p>アプリケーションでは広告を配信するためにGoogle AdMobによって提供されるサービスを利用しております。Google AdMobの利用により収集されたデータは，Google社のプライバシーポリシーに基づいて管理されます。
