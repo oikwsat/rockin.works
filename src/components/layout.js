@@ -13,6 +13,7 @@ const Layout = ({ children }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
+            siteUrl
             title
             description
             keywords
@@ -28,7 +29,7 @@ const Layout = ({ children }) => (
             { name: 'description',    content: data.site.siteMetadata.description },
             { name: 'keywords',       content: data.site.siteMetadata.keywords },
             { name: 'og:type',        content: 'profile' },
-            { name: 'og:url',         content: 'https://rockin.work/' },
+            { name: 'og:url',         content: data.site.siteMetadata.siteUrl },
             { name: 'og:title',       content: data.site.siteMetadata.title },
             { name: 'og:site_name',   content: data.site.siteMetadata.title },
             { name: 'og:description', content: data.site.siteMetadata.description },
