@@ -9,7 +9,7 @@ const YokohamaCinemasPage = () => (
     <Helmet
       title='横浜駅・みなとみらいエリアの映画館 割引カレンダー'
       meta={[
-        { name: 'description',    content: '横浜駅・みなとみらいエリアの映画館の割引デーをカレンダーにまとめています。映画館・シネコンの一般料金（大人料金）は一律「1,800円」ですが，映画館・シネコンによっては特定の「日にち」や「曜日」に割引料金を設定しており、1,100円程度の割引料金で安く鑑賞することが出来ます。' },
+        { name: 'description',    content: '横浜駅・みなとみらいエリアの映画館の割引デーをまとめたカレンダーを公開しています。 Googleカレンダーで作成していますので自分のカレンダーに表示させることも可能です。映画館の一般料金は一律「1,800円」ですが，映画館によっては特定の「日」や「曜日」に割引料金を設定しており、1,100円程度で安く鑑賞することができます。' },
         { name: 'keywords',       content: '横浜,みなとみらい,映画館,シネマ,シネコン,料金,割引,カレンダー,サービスデー' },
         { name: 'og:type',        content: 'website' },
         { name: 'og:url',         content: 'https://rockin.work/yokohama-cinemas-discount-calendar' },

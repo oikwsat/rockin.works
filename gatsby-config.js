@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://rockin.work',
     title: "rockin' works",
-    description: "rockin' works. oikwsatが自作したサービス・ツールやブログを公開しているポートフォリオサイトです。",
+    description: "A website by Satoshi Oikawa. a product guy in Yokohama City. about product, quality and management. I love music festivals🎶 and beers🍺",
     keywords: "rockin' works,oikwsat,oikawa,yokohama,product,portfolio",
   },
   plugins: [
