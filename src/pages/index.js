@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import Blogs from '../components/blogs'
 
-const IndexPage = () => (
+
+const IndexPage = ({data}) => (
   <Layout>
     <h1>welcome to rockin' works</h1>
     <p>This site is oikwsat's portfolio.</p>
@@ -22,6 +24,11 @@ const IndexPage = () => (
         <li className="list-group-item"><Link to="/yokohama-cinemas-discount-calendar/">横浜駅・みなとみらいエリアの映画館 割引デー カレンダー</Link></li>
         <li className="list-group-item"><Link to="/kawasaki-cinemas-discount-calendar/">川崎エリアの映画館 割引デー カレンダー</Link></li>
       </ul>
+    </div>
+
+    <div className="card">
+      <h3>Medium</h3>
+      <Blogs posts={data.allMediumPost.edges} />
     </div>
 
     <div className="card">
@@ -53,5 +60,24 @@ const IndexPage = () => (
 
   </Layout>
 )
+
+export const query = graphql`
+query {
+  allMediumPost(limit: 3, sort: { fields: [createdAt], order: DESC }) {
+    edges {
+      node {
+        id
+        title
+        virtuals {
+          previewImage {
+            imageId
+          }
+        }
+        uniqueSlug
+        updatedAt
+      }
+    }
+  }
+}`
 
 export default IndexPage
