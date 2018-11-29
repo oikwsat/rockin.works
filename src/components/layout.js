@@ -34,6 +34,7 @@ const Layout = ({ children }) => (
             { name: 'og:site_name',   content: data.site.siteMetadata.title },
             { name: 'og:description', content: data.site.siteMetadata.description },
             { name: 'twitter:card',   content: 'summary' },
+            { name: 'google-site-verification', content: 'NLB8uiWOBiIzhcUdpTY50FXjF6n9aDjPNFwaOiUwUvk' },
           ]}
         >
           <html lang="ja" />
