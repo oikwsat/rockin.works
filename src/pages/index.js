@@ -74,7 +74,7 @@ query {
           }
         }
         uniqueSlug
-        updatedAt
+        createdAt
       }
     }
   }

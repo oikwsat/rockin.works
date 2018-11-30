@@ -24,7 +24,7 @@ const Blogs = ({ posts }) => (
       {posts.map(post => (
       <BlogLi>
           <article key={post.node.id}>
-            <span>{post.node.updatedAt}</span>
+            <span>{post.node.createdAt}</span>
             <a href={`${MEDIUM_POST_BASE}/${post.node.uniqueSlug}`}>
             <h6>{post.node.title}</h6>
             {
